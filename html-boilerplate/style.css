@@ -47,7 +47,7 @@ button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    user-select: none;
+    user-select: all;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -128,31 +128,31 @@ a {
 /* link button */
 .link-button {
     display: block;
-    margin: 10px auto;
+    width: fit-content;
+    margin: 10px;
+}
+.link-button-inline {
+    display: inline-block;
+    margin: 10px 2px;
+}
+
+.link-button-inline, .link-button {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #3f3f3f;
-    text-align: center;
-    text-decoration: none;
     transition: all 0.3s ease;
     position: relative;
-    width: fit-content;
-}
-
-.link-button a {
-    display: block;
-    user-select: none;
     color: inherit;
     padding: 10px 20px;
 }
 
-.link-button:hover {
+.link-button-inline:hover, .link-button:hover {
     transform: translateY(-4px) scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
-.link-button:active {
+.link-button-inline:active, .link-button:active {
     transform: translateY(0) scale(1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
